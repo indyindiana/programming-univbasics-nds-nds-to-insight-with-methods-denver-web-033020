@@ -11,7 +11,7 @@ def gross_for_director(director_data)
       gross += director_data[:movies][movie_count][:worldwide_gross]
       movie_count += 1 
     end 
-    director_gross[directors_database[director_count][:name]] =  gross
+    director_gross[director_data][:name]] =  gross
     
   return director_gross
   
