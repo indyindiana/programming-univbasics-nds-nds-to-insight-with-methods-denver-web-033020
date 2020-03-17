@@ -20,3 +20,22 @@ end
 
 
 
+def directors_totals(nds)
+  director_gross = {}
+  
+  director_count = 0 
+  while director_count < directors_database.length do
+    movie_count = 0 
+    gross = 0 
+    while movie_count < directors_database[director_count][:movies].length do
+      gross += directors_database[director_count][:movies][movie_count][:worldwide_gross]
+      movie_count += 1 
+    end 
+    director_gross[directors_database[director_count][:name]] =  gross
+    
+
+    director_count += 1 
+  end
+  return director_gross
+  
+end
