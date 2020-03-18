@@ -16,7 +16,7 @@ def gross_for_director(director_data)
     end 
     director_gross[directors_database[director_count][:name]] =  gross
     
-
+return gross
   
 end
 
