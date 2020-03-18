@@ -6,19 +6,7 @@ require 'directors_database'
 
 
 def gross_for_director(director_data)
-    director_gross = {}
-  
-    movie_count = 0 
-    gross = 0 
-    while movie_count < directors_database[director_count][:movies].length do
-      gross += directors_database[director_count][:movies][movie_count][:worldwide_gross]
-      movie_count += 1 
-    end 
-    director_gross[directors_database[director_count][:name]] =  gross
-    
-return gross
-  
-end
+
 
 # Write a method that, given an NDS creates a new Hash
 # The return value should be like:
